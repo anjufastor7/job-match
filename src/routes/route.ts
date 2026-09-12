@@ -6,7 +6,7 @@ export function createRoutes(controller: Controller) {
 
   router.post("/candidates", controller.createCandidate);
   router.post("/jobs", controller.createJob);
-
+  router.get("/jobs", controller.getAllJobs);
   router.get(
     "/candidates/:id/recommendations",
     controller.getCandidateRecommendations,

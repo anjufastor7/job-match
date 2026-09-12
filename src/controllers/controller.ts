@@ -165,12 +165,18 @@ export function createController(store: JobMatchStore) {
       recommendations,
     });
   }
+  function getAllJobs(req: Request, res: Response) {
+    const jobs = store.getAllJobs();
+
+    return res.json(jobs);
+  }
 
   return {
     createCandidate,
     createJob,
     getCandidateRecommendations,
     getJobRecommendations,
+    getAllJobs,
   };
 }
 
