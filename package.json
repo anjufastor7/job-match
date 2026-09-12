@@ -10,7 +10,7 @@
     "dev": "ts-node src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "test": "jest"
+    "test": "jest --config jest.config.js"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
@@ -22,8 +22,8 @@
     "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.20.2",
-    "jest": "^30.5.1",
-    "ts-jest": "^29.4.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
